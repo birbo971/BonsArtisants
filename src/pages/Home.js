@@ -10,7 +10,7 @@ class Home extends Component{
         this._getAllProducts();
       }
         _getAllProducts = () =>{
-          fetch(`http://192.168.15.244:5000/products`)
+          fetch(`http://localhost:5000/products`)
           .then(res => res.json())
           .then((data) => {
             this.setState({ todos: data })
